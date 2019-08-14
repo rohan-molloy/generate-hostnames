@@ -4,17 +4,6 @@ This is a simple Bash script I wrote to generate memorable names for an IP addre
 
 The output is in the style of `/etc/hosts`
 
-## Modifying the network ranges
-
-Edit these to modify the network, by default, it generates `192.168.0.0/23`
-```
-subnet='192.168'
-netwMin=0
-netwMax=2
-hostMin=2
-hostMax=250
-```
-
 ## Bash Script
 
 ```
@@ -36,6 +25,17 @@ for ((i=$netwMin; i<$netwMax; i++)); do
    let "z++"; 
    done; 
 done;
+```
+
+## Modifying the network ranges
+
+Edit these to modify the network, by default, it generates `192.168.0.0/23`
+```
+subnet='192.168'
+netwMin=0
+netwMax=2
+hostMin=2
+hostMax=250
 ```
 
 ## Output
