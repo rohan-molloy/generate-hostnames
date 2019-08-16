@@ -2,8 +2,8 @@
 
 # Define the network range
 supernet=${subnet:-192.168}
-netMin=${netwMin:-122}
-netMax=${netWMax:-125}
+netMin=${netMin:-122}
+netMax=${netMax:-125}
 hostMin=${hostMin:-130}
 hostMax=${hostMax:-251}
 
