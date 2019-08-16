@@ -17,6 +17,3 @@ for ((i=$netwMin; i<$netwMax; i++)); do
     let "z++";
   done;
 done;
-
-    
-

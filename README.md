@@ -1,4 +1,4 @@
-# generate-hostnames
+# Generate-Hostnames
 
 This is a bash script to generate memorable names for an IP address space. The output is in the style of `/etc/hosts`
 
