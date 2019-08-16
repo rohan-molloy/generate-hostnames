@@ -14,11 +14,9 @@ for ((i=$netMin; i<$netMax; i++)); do
 done;
 ```
 
-The names are camelCase word pairs obtained by shuffling a list of the thousand most common English words. This produces readable and memorable hostnames 
-such as  `InterestingCitizen` or `PreventPolitics` (see output.txt) 
+The names are camelCase word pairs obtained by shuffling a list of the thousand most common English words. This produces readable and memorable hostnames such as  `InterestingCitizen` or `PreventPolitics` (see output.txt) 
 
-Often, the word pairs are semi-meaningful and it can be fun to play around with. I have sanitized obvious NSFW entries from
-the dictionary of top 100 words.
+Often, the word pairs are semi-meaningful and it can be fun to play around with. I have sanitized obvious NSFW entries from the dictionary of top 100 words.
 
 #### Download dictionary:
 >https://www.ef.co.nz/english-resources/english-vocabulary/top-1000-words/
@@ -55,8 +53,6 @@ awk '{print "local-data:\t\""$2".lan. A "$1"\"\nlocal-data-ptr:\t\""$1" "$2".lan
 
 ## Use with Dnsmasq 
 
-Dnsmasq supports standard hosts files Append `hostsdir=/path/to/dir` 
-to your `dnsmasq.conf` file then put your generated hostsfile in that directory. 
-Dnsmasq will notice changes without needing to restart the daemon 
+Dnsmasq supports standard hosts files Append `hostsdir=/path/to/dir` to your `dnsmasq.conf` file then put your generated hostsfile in that directory. Dnsmasq will notice changes without needing to restart the daemon 
 
 
