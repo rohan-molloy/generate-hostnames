@@ -238,7 +238,6 @@ Draw
 Dream
 Drive
 Drop
-Drug
 During
 Each
 Early
@@ -397,7 +396,6 @@ Huge
 Human
 Hundred
 Husband
-I
 Idea
 Identify
 If
@@ -565,7 +563,6 @@ Note
 Nothing
 Notice
 Now
-N'T
 Number
 Occur
 Of
@@ -760,8 +757,6 @@ Service
 Set
 Seven
 Several
-Sex
-Sexual
 Shake
 Share
 She
