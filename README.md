@@ -1,7 +1,7 @@
 # generate-hostnames
 
->This is a bash script to generate
->memorable names for an IP address space.
+This is a bash script to generate
+memorable names for an IP address space.
 
 ```
 wordlist=${wordlist:-'words.txt'}
@@ -18,8 +18,9 @@ done;
 The names are camelCase word pairs obtained by
 shuffling a list of the thousand most common English words.
 
-This produces readable and memorable hostnames, such as
-`InterestingCitizen` or `PreventPolitics` (see output.txt)
+This produces readable and memorable hostnames 
+such as  `InterestingCitizen` or `PreventPolitics` 
+(see output.txt)
 
 Often, the word pairs are semi-meaningful
 and it can be fun to play around with.
