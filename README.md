@@ -1,7 +1,6 @@
 # generate-hostnames
 
-This is a bash script to generate
-memorable names for an IP address space.
+This is a bash script to generate memorable names for an IP address space. The output is in the style of `/etc/hosts`
 
 ```
 wordlist=${wordlist:-'words.txt'}
@@ -15,17 +14,10 @@ for ((i=$netMin; i<$netMax; i++)); do
 done;
 ```
 
-The names are camelCase word pairs obtained by
-shuffling a list of the thousand most common English words.
+The names are camelCase word pairs obtained by shuffling a list of the thousand most common English words. This produces readable and memorable hostnames 
+such as  `InterestingCitizen` or `PreventPolitics` (see output.txt) 
 
-This produces readable and memorable hostnames 
-such as  `InterestingCitizen` or `PreventPolitics` 
-(see output.txt)
-
-Often, the word pairs are semi-meaningful
-and it can be fun to play around with.
-
-I have sanitized obvious NSFW entries from
+Often, the word pairs are semi-meaningful and it can be fun to play around with. I have sanitized obvious NSFW entries from
 the dictionary of top 100 words.
 
 #### Download dictionary:
@@ -40,9 +32,6 @@ the dictionary of top 100 words.
 - Container/Virtualization Network
 - Guest/BYOD DHCP
 - Naming things is too hard 
-
-The output is in the style of `/etc/hosts`
-
 
 ## Modifying the network ranges
 
@@ -64,14 +53,10 @@ Use the below script to convert your hosts file into local data entries for Unbo
 awk '{print "local-data:\t\""$2".lan. A "$1"\"\nlocal-data-ptr:\t\""$1" "$2".lan\""}' output.txt
 ```
 
-## Use with dnsmasq 
+## Use with Dnsmasq 
 
-dnsmasq supports standard hosts file. 
-
-Append `hostsdir=/path/to/dir` to your `dnsmasq.conf` file 
-then put your generated hostsfile in that directory.
-
-dnsmasq will notice changes to files (or newly added files)
-without needing to restart the daemon 
+Dnsmasq supports standard hosts files Append `hostsdir=/path/to/dir` 
+to your `dnsmasq.conf` file then put your generated hostsfile in that directory. 
+Dnsmasq will notice changes without needing to restart the daemon 
 
 
