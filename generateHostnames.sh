@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the network range
-supernet=${subnet:-192.168}
+supernet=${supernet:-192.168}
 netMin=${netMin:-122}
 netMax=${netMax:-125}
 hostMin=${hostMin:-130}
