@@ -53,6 +53,7 @@ awk '{print "local-data:\t\""$2".lan. A "$1"\"\nlocal-data-ptr:\t\""$1" "$2".lan
 
 ## Use with Dnsmasq 
 
-Dnsmasq supports standard hosts files Append `hostsdir=/path/to/dir` to your `dnsmasq.conf` file then put your generated hostsfile in that directory. Dnsmasq will notice changes without needing to restart the daemon 
+Dnsmasq supports standard hosts files  
+Append `hostsdir=/path/to/dir` to your `dnsmasq.conf` file then put your generated hostsfile in that directory. Dnsmasq will notice changes without needing to restart the daemon 
 
 
