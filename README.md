@@ -16,7 +16,7 @@ done;
 
 The names are camelCase word pairs obtained by shuffling a list of the thousand most common English words. This produces readable and memorable hostnames such as  `InterestingCitizen` or `PreventPolitics` (see output.txt) 
 
-Often, the word pairs are semi-meaningful and it can be fun to play around with. I have sanitized obvious NSFW entries from the dictionary of top 100 words.
+Often, the word pairs are semi-meaningful and it can be fun to play around with. I have sanitized obvious NSFW entries from the dictionary of top 1k words.
 
 #### Download dictionary:
 >https://www.ef.co.nz/english-resources/english-vocabulary/top-1000-words/
